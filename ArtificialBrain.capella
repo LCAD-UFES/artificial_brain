@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_5.2.0-->
+<org.polarsys.capella.core.data.capellamodeller:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/5.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/5.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/5.0.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/5.0.0"
+    xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/5.0.0"
+    xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/5.0.0"
+    xmlns:org.polarsys.capella.core.data.epbs="http://www.polarsys.org/capella/core/epbs/5.0.0"
+    xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/5.0.0"
+    xmlns:org.polarsys.capella.core.data.information="http://www.polarsys.org/capella/core/information/5.0.0"
+    xmlns:org.polarsys.capella.core.data.information.datatype="http://www.polarsys.org/capella/core/information/datatype/5.0.0"
+    xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/5.0.0"
+    xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/5.0.0"
+    xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/5.0.0"
+    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/5.0.0"
+    xmlns:org.polarsys.capella.core.data.pa.deployment="http://www.polarsys.org/capella/core/pa/deployment/5.0.0"
+    id="1286bacd-eab2-4d1d-92cb-09935f243abb"
+    name="ArtificialBrain">
+  <ownedExtensions xsi:type="libraries:ModelInformation" id="457ba9ce-19a3-4be0-8991-86df5640b09b"/>
+  <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
+      id="c2767f7f-1209-405c-a64a-443d0e786567" name="ProgressStatus">
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="1fd673e8-7f22-48d9-a81b-1c1f614faae2" name="DRAFT"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="9bb5de10-7e95-42d5-b277-85de1cfe7fc4" name="TO_BE_REVIEWED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="58531641-e338-454f-90c3-32939f53a360" name="TO_BE_DISCUSSED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="d20b65ad-7a95-4ec0-9c1e-3b364bbc58bf" name="REWORK_NECESSARY"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="ef0e0804-ac93-4692-bf33-d5814ae43979" name="UNDER_REWORK"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="9c50890d-17ab-4906-b741-4eefecf1ffe4" name="REVIEWED_OK"/>
+  </ownedEnumerationPropertyTypes>
+  <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue" id="c47bb12c-57af-4e91-8550-e62e475ab96a"
+      key="projectApproach" value="SingletonComponents"/>
+  <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
+      id="1bf2b5bc-281c-48ff-82b5-201b389cc26b" name="ArtificialBrain">
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
+        id="004cc036-5c78-44f3-9f4e-9e9b82484013" name="Operational Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
+          id="3372c00d-3316-45c8-810c-9d08369d0f8d" name="Operational Activities">
+        <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+            id="bf568914-0a7d-4fca-bbd3-6a463600e327" name="Root Operational Activity"/>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
+          id="193c7323-de60-4178-897b-5e1a5a37d098" name="Operational Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="e7311540-b308-4d33-a676-dc9513eec571" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="08ddb31f-6b77-4931-8759-8f2b53ad115d" name="Data"/>
+      <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="73162899-e036-4f5f-9e51-88d32d87d5c1"
+          name="Roles"/>
+      <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="f6893743-48d0-4faa-8f43-3b112b4f350e"
+          name="Operational Entities">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a02b0c55-6121-4ebb-8f3e-dcb7843d1c8c"
+            name="Unstructured Scenario" abstractType="#bf96b83f-2dc3-4cec-960d-d89bb2306639"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a2409054-6766-45f1-8bd0-18c24af7d16e"
+            name="Autonomous Intelligent Agent" abstractType="#059a447b-106d-4aac-bd61-6f5519b5a421"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="6e14462b-0f91-42ac-864c-1b354e82f6c3"
+            name="Human interlocutor" abstractType="#4e5e260d-877f-4b68-b969-ee19f0e5717e"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="bf96b83f-2dc3-4cec-960d-d89bb2306639"
+            name="Unstructured Scenario"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="059a447b-106d-4aac-bd61-6f5519b5a421"
+            name="Autonomous Intelligent Agent"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="4e5e260d-877f-4b68-b969-ee19f0e5717e"
+            name="Human interlocutor" actor="true" human="true"/>
+      </ownedEntityPkg>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
+        id="5452cf56-1b6c-4c0d-a2d8-8607d4ca1004" name="System Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
+          id="54409672-58c7-40c0-8307-cf278e7e8819" name="System Functions">
+        <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+            id="7ea6c4a2-02e8-46fb-b2ce-2f1f4ad68626" name="Root System Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="a5343a6f-a179-426e-9639-2614863f5631" targetElement="#bf568914-0a7d-4fca-bbd3-6a463600e327"
+              sourceElement="#7ea6c4a2-02e8-46fb-b2ce-2f1f4ad68626"/>
+        </ownedSystemFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
+          id="655005bf-9c58-4f71-a53d-54d2f813db2e" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="1ebe2364-ce29-4433-86f3-9229b0b7269a" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="7478cf7b-1d1e-457b-bcd0-a998dd7232da" name="Data">
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="9fad0cfb-a84b-4f93-8ea2-871692c80620" name="Predefined Types">
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:BooleanType"
+              id="57944605-f755-45ea-a8e5-5897e66b0867" name="Boolean" visibility="PUBLIC">
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="472bd0f5-d624-4961-8602-ba2f00af9ccb" name="True" abstractType="#57944605-f755-45ea-a8e5-5897e66b0867"
+                value="true"/>
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="c94afdc2-b675-439b-9660-8fe84cd52803" name="False" abstractType="#57944605-f755-45ea-a8e5-5897e66b0867"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="68b162f5-de31-4d9f-b001-6cc2e9298392" name="Byte" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="8ac0df87-6692-4df1-917f-1483e9d08a2d" name="" abstractType="#68b162f5-de31-4d9f-b001-6cc2e9298392"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="32521c95-14f5-4083-b019-464e5e4b7f98" name="" abstractType="#68b162f5-de31-4d9f-b001-6cc2e9298392"
+                value="255"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="57a81482-e330-4782-b8bd-70d829f9ad04" name="Char" visibility="PUBLIC">
+            <ownedMinLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="5da28254-e3e6-4a90-bb8f-e78286b5ec23" name="" abstractType="#083aa2a2-56e1-4ee6-ae79-1433cebc28ac"
+                value="1"/>
+            <ownedMaxLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="7314a034-bb42-423c-81e2-2a8c840c4ecc" name="" abstractType="#083aa2a2-56e1-4ee6-ae79-1433cebc28ac"
+                value="1"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="1a6573a1-4430-4eda-9dd9-0bfb6a7e1d88" name="Double" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="42d820d8-9c2d-4db2-a455-edd20fea59b2" name="Float" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="bf9ced21-d48a-442d-a6d3-bd46e0de79dc" name="Hexadecimal" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="bdc4c9a8-0daf-49d3-9407-9d000223e8f5" name="" abstractType="#bf9ced21-d48a-442d-a6d3-bd46e0de79dc"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                id="120b6ed6-1cbc-40de-a3d0-40a3a76ae56b" abstractType="#bf9ced21-d48a-442d-a6d3-bd46e0de79dc"
+                operator="SUB">
+              <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                  id="e8c1899e-3d55-4a90-84d4-d12fc7daadc1" operator="POW">
+                <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="857fcb4c-4604-443e-b1b6-da3f88bcf1b4" value="2"/>
+                <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="f29e1941-ff8b-4bf6-857a-1f620f3631b9" value="64"/>
+              </ownedLeftOperand>
+              <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="1795d6c2-4598-41ec-9313-b2a472899645" value="1"/>
+            </ownedMaxValue>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="ac6273da-d615-4409-b912-3f7b482520cf" name="Integer" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="093de664-de8b-4b98-bd2c-4cb457141023" name="Long" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="9a71ee08-9736-4627-af81-628ca281edc1" name="LongLong" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="b270360a-953a-4ef4-8841-e382278ed8e5" name="Short" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="aaadd86c-4c02-4513-bcf2-45f37ff76a2a" name="String" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="0e07f84d-0e4e-40d4-bd55-486fd0c442ca" name="UnsignedInteger" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="e9af2cdb-840d-4383-9408-b5a1c28eabdd" name="" abstractType="#0e07f84d-0e4e-40d4-bd55-486fd0c442ca"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="083aa2a2-56e1-4ee6-ae79-1433cebc28ac" name="UnsignedShort" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="a2a7ac61-138d-431a-9a88-0f869b799404" name="" abstractType="#083aa2a2-56e1-4ee6-ae79-1433cebc28ac"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="3d84aac3-1e7d-4b51-83a9-58ad6eeac3be" name="UnsignedLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="0402d4be-1003-41dc-8342-8fdd2d391844" name="" abstractType="#3d84aac3-1e7d-4b51-83a9-58ad6eeac3be"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="30aac3b8-ff8f-4d53-bbd3-0892ac013889" name="UnsignedLongLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="4cbd327f-be7c-4dbb-88f5-87c41bdc4b0c" name="" abstractType="#30aac3b8-ff8f-4d53-bbd3-0892ac013889"
+                value="0"/>
+          </ownedDataTypes>
+        </ownedDataPkgs>
+      </ownedDataPkg>
+      <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
+          id="756b17b9-50e9-4fcf-b49d-66063087ec79" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="84abfb3a-ed0b-49dd-81b4-e7e4764a62d7"
+            name="System" abstractType="#f7c1b684-6e01-4c5b-aa4c-fd97c3e54dcc"/>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="f7c1b684-6e01-4c5b-aa4c-fd97c3e54dcc" name="System">
+          <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+              id="6e6a9134-4753-4112-b7f4-3bf526034607" name="System State Machine">
+            <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                id="2f34b761-8da5-4751-8ca0-98e4acb22db5" name="Default Region"/>
+          </ownedStateMachines>
+        </ownedSystemComponents>
+      </ownedSystemComponentPkg>
+      <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="d9d1fd17-eefd-4e07-b9ce-914c64b3f0ce"
+          name="Missions"/>
+      <ownedOperationalAnalysisRealizations xsi:type="org.polarsys.capella.core.data.ctx:OperationalAnalysisRealization"
+          id="a97e0717-2171-48aa-b398-6428eade6054" targetElement="#004cc036-5c78-44f3-9f4e-9e9b82484013"
+          sourceElement="#5452cf56-1b6c-4c0d-a2d8-8607d4ca1004"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.la:LogicalArchitecture"
+        id="611d8a15-5040-43b5-9622-59b62b57bcc9" name="Logical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
+          id="71219db1-a67f-4618-aa0c-aee2c290767c" name="Logical Functions">
+        <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+            id="33851175-f0bb-4c42-8828-6e5cb300d414" name="Root Logical Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="c043655d-a7ce-4994-a645-65f3b7b6ac1d" targetElement="#7ea6c4a2-02e8-46fb-b2ce-2f1f4ad68626"
+              sourceElement="#33851175-f0bb-4c42-8828-6e5cb300d414"/>
+        </ownedLogicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="9bd34973-569d-4038-bb10-4ba378bb41bf" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="afa4d5ab-9eb2-4e10-9d9b-c25190113850" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="55b20aba-0998-4482-9998-511335cdb46b" name="Data"/>
+      <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+          id="c7eb627b-6a5f-4219-8de8-6965b51a5372" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="37cbfe70-e7a6-4671-b20b-57aa1a221e03"
+            name="Autonomous Intelligent Agent" abstractType="#8fbc07b2-2e3b-4bb8-a6ae-edf33c26b78a"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="ed178bf4-af98-4ddd-8e3d-3b953d5ea28e"
+            name="Human Interlocutor" abstractType="#b471e0cf-89bf-4232-89ec-e5e0bfa4e5cb"/>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="8fbc07b2-2e3b-4bb8-a6ae-edf33c26b78a" name="Autonomous Intelligent Agent">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a3e169af-2932-4d21-af05-2fa90cb7c639"
+              name="Autonomous Computational Intelligence (Artificial Brain)" abstractType="#95d949cd-89b7-4679-a563-0098e3be5986"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f6174107-7314-45cf-9b9d-7d4c75612e34"
+              name="Semi-Autonomous Experimental Robotic Platform (Artificial Body)"
+              abstractType="#ed705a79-c201-4794-b5d1-723f62cfd961"/>
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="df83f9bd-f71b-495f-9b66-4dcbeae9d599" targetElement="#f7c1b684-6e01-4c5b-aa4c-fd97c3e54dcc"
+              sourceElement="#8fbc07b2-2e3b-4bb8-a6ae-edf33c26b78a"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="95d949cd-89b7-4679-a563-0098e3be5986" name="Autonomous Computational Intelligence (Artificial Brain)"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="ed705a79-c201-4794-b5d1-723f62cfd961" name="Semi-Autonomous Experimental Robotic Platform (Artificial Body)">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="70518566-2d6b-41ad-a8d8-27dbcd48f3a5"
+                name="Sensors (e.g. wheel odometers, joint stereo camera system, microphones)"
+                abstractType="#728d6cdf-21c6-4503-b9a8-32d111e204a0"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2defaa9e-8807-42c1-8f9a-21fb53ca40e8"
+                name="Actuators (e.g. wheel motors, robot arm servos, speakers) "
+                abstractType="#0e475308-385b-4bf0-ab66-ba9a5289cf71"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="26cc32f6-c29a-4caf-9340-e4a4dea31dc2"
+                name="IARA (e.g. navigation, control &amp; path planning modules)"
+                abstractType="#ecabab08-2226-4074-8966-deee692dde8b"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="728d6cdf-21c6-4503-b9a8-32d111e204a0" name="Sensors (e.g. wheel odometers, joint stereo camera system, microphones)"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="0e475308-385b-4bf0-ab66-ba9a5289cf71" name="Actuators (e.g. wheel motors, robot arm servos, speakers) "/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="ecabab08-2226-4074-8966-deee692dde8b" name="IARA (e.g. navigation, control &amp; path planning modules)"/>
+          </ownedLogicalComponents>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="b471e0cf-89bf-4232-89ec-e5e0bfa4e5cb" name="Human Interlocutor" actor="true"
+            human="true"/>
+      </ownedLogicalComponentPkg>
+      <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
+          id="67df00a8-1f13-4c41-982b-b7aeaf1f7d73" targetElement="#5452cf56-1b6c-4c0d-a2d8-8607d4ca1004"
+          sourceElement="#611d8a15-5040-43b5-9622-59b62b57bcc9"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.pa:PhysicalArchitecture"
+        id="3e90200b-89c5-42c7-85a9-30589301dee6" name="Physical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunctionPkg"
+          id="e7da6fc1-2cbd-4cac-949b-a880304aa83f" name="Physical Functions">
+        <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+            id="242c53a4-1bfe-4c16-b01e-c4adf5c8ef5d" name="Root Physical Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="7dc55599-67be-48ac-861a-7c6c2723690e" name="iRobot Creator 2 Driver Functions">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="dd233842-451d-410a-8bef-de0ffa4ef7b0" name="Command actuators: wheels, brushes, vacuum, speaker, LEDS, and buttons"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="9eccfdf9-45db-4844-a13f-2da355f292e7" name="Set operating mode: off, passive, safe, and full"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="049426d2-e7bc-4d9d-920b-67f281bd6c63" name="Set built-in cleaning modes, clock and schedule"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="14127dde-ef9c-4546-8795-8734ea1ee16a" name="Get the state of built-in sensors (e.g. infrared, requested wheel speeds, wheel encoders' counts)"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="b10b79b9-c807-4863-9cf1-84d4d6df8dc0" name="Get digital and analog inputs and the internal state variables (e.g. battery level, leds)"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="c857bcd9-77ab-4554-b8f4-cd4ca00fbef3" name="Intel Realsense Driver Functions">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="6b1402c3-08fc-43d0-8926-d4bd48a2d663" name="Get stereo frames"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="976ddc7c-ef37-41dc-a8e1-3b6bfbf73f6e" name="Get deep map"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="9048c3fb-bd09-42fd-b993-c728c2705e5e" name="Get device status &amp; internal states"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="7170bd47-dc6d-4267-bbbe-c05953fba463" name="Configure device"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="35484290-3db0-4abf-8e99-1727107a69ba" name="Set operating mode (e.g. on / off)"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="c30c376c-ba77-4742-abed-594006bfb255" name="Robot Arm Driver Functions">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="106570a5-86d7-4cd6-81d1-5c33c9fdde47" name="Set operating mode (e.g. on / off)"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="827124f3-985c-4bf0-8c09-901c5bbc85ee" name="Configure device"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="0e2eb6bc-2c44-43b8-8e2a-82b3dc3f164a" name="Command actuators (e.g. joint servos, gripper)"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="b8c3997b-1139-4d5f-b4ac-897da7423837" name="Read position and voltage feedback"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="b87d9f27-1366-495a-9c48-159db3472a1f" name="Get device status &amp; internal states"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="bc63bc12-0c41-43c2-bc07-ff6f3c319fea" name="IARA Modules' Functions (e.g. mapping &amp; localization, path planning)">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="16638d1f-2f3a-4a34-9e4f-9e0f6a5b3025" name="Map the surrounding environment (i.e. create internal representations of the world)"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="c5dc9d13-4c4f-4ef4-9e10-4488c1545c57" name="Estimate robot's pose (position, heading and velocity  w.r.t. global frame)"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="2bfffbca-1f6b-44ce-a2ab-41f792f40b8c" name="Control robot's movement (set references for robot's heading and left/right wheel speeds)"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="f6691782-849e-4155-bd9c-09df03c473aa" name="Perform motion planning"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="1315d11a-4e2e-4740-8996-3fba9f4f5d73" name="Perform path planning"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="7a5a239d-df3e-492b-b966-ed5f0d477c87" name="Track moving objects and predict their future kinematic state"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="97f15055-07cc-4f2f-98f0-5aa235d56e41" name="Detect static obstacles nearby the robot"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="92e9d59d-4e73-4c7a-92e8-4513534ccd6f" name="Avoid colisions with both static obstacles and moving objects"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="8400c7d2-dd7a-4826-987f-6604c89a44ee" name="Artificial Brain's Functions">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="ae10647a-0e76-423f-8120-54506587dfe8" name="Peform text-to-speech (TTS) generation"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="d48d525c-3d04-491e-8265-aa6d216b7569" name="Translate motor/sensory episodes experienced in the world into generalization scripts"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="cb359849-a284-4690-9f83-3ebc9e11e9e4" name="Recall and employ applicable learned scripts to predict the most likely world scenarios"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="4e3e57f4-94c7-4e18-b0b9-1736dced6c84" name="Select and follow a script to tentatively enforce a desired future world scenario "/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="ef1cb711-7fd4-4eaa-830d-cd4961080c54" name="Unfold selected scripts into high level motor commands and expected sensory inputs"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="37c06ed7-9732-40a7-8373-1b4937935923" name="Continuously learn new scripts at the expense of forgetting  underused ones"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="db5fad7c-6375-4639-9b97-9f8fd2c10182" name="Perform automatic-speech-recognition (ASR)"/>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+                id="e1fa7782-623a-43b8-9a09-7a840dfe856c" name="Create a higher level representation of the world that includes time (and its own state)"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="42857b29-3012-4a81-9191-3623441a804a" name="2DoF Pan Tilt Driver Functions"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="61970196-5fa8-4648-baef-29250f66a99d" name="Audio Module Functions"/>
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="630ecc5b-ce62-4885-9b7c-4e802bcc611c" targetElement="#33851175-f0bb-4c42-8828-6e5cb300d414"
+              sourceElement="#242c53a4-1bfe-4c16-b01e-c4adf5c8ef5d"/>
+        </ownedPhysicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="4a3013a7-356a-4a47-b0cf-a2b7df8291c0" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="cb54884c-36ee-413d-b5b7-d22dc6bc72de" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="6c1d31a3-97f3-4b68-9943-74b1268325c8" name="Data"/>
+      <ownedPhysicalComponentPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
+          id="d48133c4-363d-460b-ab9e-42c003c14bd0" name="Structure">
+        <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+            id="6e631abb-4915-4d48-9534-266d66c15372" name="">
+          <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+              id="efb1dca6-3679-4ecf-bfd6-1a7a058d7300">
+            <bodies></bodies>
+            <languages>capella:linkedText</languages>
+          </ownedSpecification>
+        </ownedConstraints>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="09a0a001-72e1-44b8-91af-2b154e337fb9"
+            name="Autonomous Intelligent Agent" abstractType="#7ae5aed6-cc7e-41ff-bfd9-81f54c481ed6"/>
+        <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+            id="7ae5aed6-cc7e-41ff-bfd9-81f54c481ed6" name="Autonomous Intelligent Agent">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="21faa090-60cb-4410-8ae4-fe5f6ca43dec" targetElement="#a3e169af-2932-4d21-af05-2fa90cb7c639"
+              sourceElement="#810e4bd2-d077-46e3-ba0c-d92ad65bfdbe"/>
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+              id="1fc127fd-9b77-4c30-85c9-f7e5c73a23ae" targetElement="#f6174107-7314-45cf-9b9d-7d4c75612e34"
+              sourceElement="#8de00d33-1259-4aec-be43-3f9b09195de5"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="810e4bd2-d077-46e3-ba0c-d92ad65bfdbe"
+              name="Autonomous Computational Intelligence (Artificial Neocortex)"
+              abstractType="#1b555e37-42fb-4776-bfa4-e4f146d61136"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8de00d33-1259-4aec-be43-3f9b09195de5"
+              name="IARA System (Artificial Old-Brain)" abstractType="#b586abee-5fab-4415-b3cf-c5e14eadf079"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="86730903-fd59-4d8d-8387-dbfd36360baf"
+              name="Experimental Robotic Platform (Artificial Body)" abstractType="#806fdd15-47d5-4e39-a611-35b02a426f42"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="96b9cc05-54e2-4bac-a24a-5a12c09b5e62"
+              name="Remote Artificial Brain" abstractType="#52090268-c446-4dd9-8405-add7414a1c8d"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="873fd81e-d575-4357-824b-874ee759724e"
+              name="2DoF Pan Tilt Driver Module" abstractType="#ecb880f0-c24c-43bc-84b1-0cd6eaee3d85"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="81f76441-6a68-40fe-a181-ac1db01306ed"
+              name="Audio Module" abstractType="#e79bc9a7-153a-4eed-8e14-3907031ea907"/>
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="9989028e-7cb6-4a82-aaf2-f9e3e51d4158" targetElement="#8fbc07b2-2e3b-4bb8-a6ae-edf33c26b78a"
+              sourceElement="#7ae5aed6-cc7e-41ff-bfd9-81f54c481ed6"/>
+          <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+              id="d9b637e7-4178-4b8f-83c7-8570ae25c342" name="High Speed Wi-Fi link 300Mbps (2.4G) / 433Mbps (5G)"
+              linkEnds="#bc52e4df-157f-4b02-94b4-a0cdcc5b15a4 #dff6b43f-0b06-447d-a435-b600ddf78af8"/>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="1b555e37-42fb-4776-bfa4-e4f146d61136" name="Autonomous Computational Intelligence (Artificial Neocortex)"
+              nature="BEHAVIOR">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="1ee652dd-ecc0-481c-b43b-52013be2c93b" targetElement="#8400c7d2-dd7a-4826-987f-6604c89a44ee"
+                sourceElement="#1b555e37-42fb-4776-bfa4-e4f146d61136"/>
+            <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+                id="2b00d890-ff01-4445-8ae7-29dc240fece7" targetElement="#95d949cd-89b7-4679-a563-0098e3be5986"
+                sourceElement="#1b555e37-42fb-4776-bfa4-e4f146d61136"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="b586abee-5fab-4415-b3cf-c5e14eadf079" name="IARA System (Artificial Old-Brain)"
+              nature="BEHAVIOR">
+            <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+                id="2f975859-c838-40d9-8bb6-956f4ae1d28e" targetElement="#2defaa9e-8807-42c1-8f9a-21fb53ca40e8"
+                sourceElement="#b43bbee2-3a40-4ac5-8463-a19da78077b7"/>
+            <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:TransfoLink"
+                id="464f96bb-f153-45e4-9e07-f865c3756365" targetElement="#26cc32f6-c29a-4caf-9340-e4a4dea31dc2"
+                sourceElement="#fc4fe721-a1ec-4ff7-8e72-571e745a17a9"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b43bbee2-3a40-4ac5-8463-a19da78077b7"
+                name="iRobot Creator 2 Driver Module" abstractType="#3626bc13-761b-4a32-b2e7-8c240e57b8b6"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fc4fe721-a1ec-4ff7-8e72-571e745a17a9"
+                name="Robotic Arm Driver Module" abstractType="#21bb30c8-209c-4d5c-9e3d-7d5949485cfa"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="edb263eb-ad72-43dc-8a10-bc1365a53930"
+                name="Intel Realsense Driver Module" abstractType="#a9061095-b6b0-4a4f-9f9d-ebd37f7feaca"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="77784d7a-bf19-498c-ab7d-9cb160a052ca"
+                name="IARA/Carmen Modules (Artificial Old Brain)" abstractType="#84713c9f-5fd1-4075-bff1-9c4446112fb3"/>
+            <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+                id="91b093ea-2511-4385-a704-febac4f4f252" targetElement="#ed705a79-c201-4794-b5d1-723f62cfd961"
+                sourceElement="#b586abee-5fab-4415-b3cf-c5e14eadf079"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="3626bc13-761b-4a32-b2e7-8c240e57b8b6" name="iRobot Creator 2 Driver Module"
+                nature="BEHAVIOR">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="33d63d8b-494a-4ca4-8d37-3f6deb98cf44" targetElement="#7dc55599-67be-48ac-861a-7c6c2723690e"
+                  sourceElement="#3626bc13-761b-4a32-b2e7-8c240e57b8b6"/>
+              <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+                  id="3f9013f8-aa0c-415c-8564-a1ae84a2317d" targetElement="#0e475308-385b-4bf0-ab66-ba9a5289cf71"
+                  sourceElement="#3626bc13-761b-4a32-b2e7-8c240e57b8b6"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="21bb30c8-209c-4d5c-9e3d-7d5949485cfa" name="Robotic Arm Driver Module"
+                nature="BEHAVIOR">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="83f8b641-585e-4a58-82a2-c64621f9f271" targetElement="#c30c376c-ba77-4742-abed-594006bfb255"
+                  sourceElement="#21bb30c8-209c-4d5c-9e3d-7d5949485cfa"/>
+              <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+                  id="6836e794-5c8d-4baf-bdf7-7358a36f6966" targetElement="#ecabab08-2226-4074-8966-deee692dde8b"
+                  sourceElement="#21bb30c8-209c-4d5c-9e3d-7d5949485cfa"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="a9061095-b6b0-4a4f-9f9d-ebd37f7feaca" name="Intel Realsense Driver Module"
+                nature="BEHAVIOR">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="76970aea-a795-435f-a3b1-5b7f125e41e4" targetElement="#c857bcd9-77ab-4554-b8f4-cd4ca00fbef3"
+                  sourceElement="#a9061095-b6b0-4a4f-9f9d-ebd37f7feaca"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="84713c9f-5fd1-4075-bff1-9c4446112fb3" name="IARA/Carmen Modules (Artificial Old Brain)"
+                nature="BEHAVIOR">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="f47ffa2b-20dd-4575-8161-c59cf24b72dc" targetElement="#bc63bc12-0c41-43c2-bc07-ff6f3c319fea"
+                  sourceElement="#84713c9f-5fd1-4075-bff1-9c4446112fb3"/>
+            </ownedPhysicalComponents>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="806fdd15-47d5-4e39-a611-35b02a426f42" name="Experimental Robotic Platform (Artificial Body)"
+              nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="defaf48e-ff86-4afe-9128-1f4b7f1773eb"
+                name="xArm 1S Robotic Arm " abstractType="#6a210268-df29-44af-9d17-6dd5e84caa37"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fde376a7-a7ab-4fe0-bc2f-aca3c44782ca"
+                name="iRobot Creator 2" abstractType="#7a56ccff-9608-4efa-bccd-50b9f57b9d53"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4d6b141c-7572-49f7-9970-cd90442ea351"
+                name="SBC#1: Raspberry Pi 4 8GB / 64GB" abstractType="#f0e0ccd3-3e31-4b08-a756-bb5ec1acc4ed">
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="b5b40721-4aa1-4957-aa4d-9b2175a48f27" deployedElement="#fc4fe721-a1ec-4ff7-8e72-571e745a17a9"
+                  location="#4d6b141c-7572-49f7-9970-cd90442ea351"/>
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="db0cb6f3-64e2-4529-bc64-101daa61bcc2" deployedElement="#b43bbee2-3a40-4ac5-8463-a19da78077b7"
+                  location="#4d6b141c-7572-49f7-9970-cd90442ea351"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e0080648-7c86-45fc-a44d-92d40d52a597"
+                name="Intel Realsense D435i" abstractType="#12d140b8-6b22-4c41-b995-70f3c8d7ed99"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ef445496-68f0-4509-b2e3-3ed081756c24"
+                name="SMAKN DC-DC 12V to 7V5/6A 45W Converter" abstractType="#9ff826f7-7f7a-4005-8486-2f344faa62a1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="43276447-36fd-4155-9d36-f4b782854f7f"
+                name="SBC#2: Raspberry Pi 4 8GB / 64GB" abstractType="#28ef0ab8-377e-44b0-8272-19b239336fee">
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="284b3599-edff-4b0e-a5d6-82d89fd554ed" deployedElement="#edb263eb-ad72-43dc-8a10-bc1365a53930"
+                  location="#43276447-36fd-4155-9d36-f4b782854f7f"/>
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="4e7c3061-5011-42c5-a2b5-d33bbcaf234e" deployedElement="#873fd81e-d575-4357-824b-874ee759724e"
+                  location="#43276447-36fd-4155-9d36-f4b782854f7f"/>
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="cbff030c-e64f-4325-bd46-52aafeaaed01" deployedElement="#81f76441-6a68-40fe-a181-ac1db01306ed"
+                  location="#43276447-36fd-4155-9d36-f4b782854f7f"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="30ef72a7-a989-44fe-b66d-1c62060e4b85"
+                name="Dual-band Wi-Fi Router GI Inet GL-AR750 (100mm X 68mm X 24mm, 86g)"
+                abstractType="#ecee115f-88cd-490b-b5ba-d7e0fca0bcbd"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c1918c69-5557-4d6d-b812-69c7cc5faa22"
+                name="LY-KREE DC-DC 12V to 5V/15A 75W Converter" abstractType="#02ea3b41-2fa4-4b5e-bb86-6bcdfbb0dddf"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="13778882-e59b-4d0d-b54f-e2319ae2926a"
+                name="2DoF Pan Tilt Servo Kit" abstractType="#6287190f-e572-43a8-821b-8fc5ed1630e1"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ab2c6d0a-792a-4070-ad9a-86dc2ddacd10"
+                name="Speakers" abstractType="#33fbcd83-5f16-4b42-96a1-99320c00aaef"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fd881796-fcfe-4266-a349-f01b7d644beb"
+                name="Omni Mic" abstractType="#ab784c79-4745-4bef-a6e7-fd66c9fbef49"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1168d1f8-9b1d-4027-bf50-c950714156af"
+                name="Skyrich Lithium Battery Lix14 12V 12/14Ah" abstractType="#84af20f7-f915-4ab5-901b-c6c23c5c671b"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="c9bb472d-f8b1-4709-80bf-6ba92dbb1747" name="Serial cable with USB adapter"
+                linkEnds="#df261461-2040-4a34-b7e7-10267f9b07ba #ef548b5d-2c7a-4ff8-8c4f-4535d5295761"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="d573e009-6599-4cd6-aa46-7ed2042d65c2" name="USB‑C* 3.1 Gen 1* Cable"
+                linkEnds="#575124fe-f03c-461d-8c6e-e1f16e782ed6 #dcb07eff-1bad-40c4-b03c-4ead11fbf180"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="25ebce27-b5db-4bfe-84ae-5e0ae9cc6d75" name="USB Cable" linkEnds="#29dfde64-ac16-4e8e-8454-50c776f39b88 #6f6a8afc-0c4b-4869-8ea9-0f5609d274ef"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="1e474188-34b3-4065-92fb-2e85c16a115c" name="7.5V / 6A" linkEnds="#98b6b956-123b-4ffa-9b15-458afed4ad55 #5a0537df-7fd0-43b1-b89a-6fed17316591"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="77cf36b3-b2f1-4102-b05c-6d66a442b46a" name="Gigabit Ethernet"
+                linkEnds="#0dd92342-a164-42a3-8b92-36970149f2a7 #e0639299-0c46-477d-a8b8-f631fdbfb4d1"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="3e914912-497e-4670-93a7-77b6262fd345" name="Gigabit Ethernet"
+                linkEnds="#e3061fd8-b561-4e77-a8cc-ef2608d8ee7c #c956d216-be8e-4938-98a9-158f455d072c"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="c604def2-3822-4822-a85a-546e972121ce" name="5V/2A &lt; 6W (Mini USB)"
+                linkEnds="#fea0075e-3020-4654-be27-948e9f5edf7c #88392c53-81d8-4242-99ab-f24e1c3efd18"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="9f53c616-52dd-4c51-bf7a-7c4aad1f239d" name="5V/3A &lt; 3.4W (USB Type-C)"
+                linkEnds="#940e0d2b-6e1e-4504-8f71-1b8aa4b840e0 #4108881f-4890-48a8-bdc7-96ee5f24a13d"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="ada2b350-e216-42eb-8eda-91c35493ce09" name="5V/3A &lt; 3.4W (USB Type-C)"
+                linkEnds="#120340f0-f8c5-4fb3-a793-b69c150b27a4 #2d2bbb10-7bda-4683-bf01-5e0b114c686c"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="54f1c297-f41d-4f7f-b57f-847b436258f0" name="GPIO" linkEnds="#a040ff53-e280-4cee-8b23-7fb17607b982 #c938ba1b-998b-446f-a510-cbca7155a071"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="abb37122-a24f-41ae-95f2-3d2b08bfb03c" name="5V / 2A" linkEnds="#134d0225-8a7c-42e6-b155-82be8307b1e8 #9b7013f1-61c6-4767-8a92-8ab5675e0b11"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="259abcb6-d581-4930-aea1-87c4eeab7564" name="USB / PS2" linkEnds="#ced47a89-2e65-45e6-9d4b-a1707eb4de42 #c0183afe-141e-4c63-9bc7-09e373f1096c"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="a4b5d1ea-f26f-41c0-b730-261af377ab9f" name="USB" linkEnds="#c6151c0c-66cf-421e-93de-fcb8b622d52d #32b150cf-bb04-4480-ae21-6e351e4c0e29"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="18212d83-416b-4e61-8e2e-513647227270" name="12V/4A ~45W" linkEnds="#18f0a8d5-5cba-453d-9dae-8083c2c6fe9b #3ca1b517-9dd6-49af-acf0-8af24b4c6a82"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="4a339902-6b28-4d0f-921c-96e048d40d12" name="12V/6A ~ 75W" linkEnds="#de387191-c39a-41cf-8a69-5c6fbfc0ee8e #06582a50-ce3a-48d8-b73e-956eaae504ce"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="6a210268-df29-44af-9d17-6dd5e84caa37" name="xArm 1S Robotic Arm "
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="6f6a8afc-0c4b-4869-8ea9-0f5609d274ef" name="PP 1"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="98b6b956-123b-4ffa-9b15-458afed4ad55" name="PP 2"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="7a56ccff-9608-4efa-bccd-50b9f57b9d53" name="iRobot Creator 2"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="ef548b5d-2c7a-4ff8-8c4f-4535d5295761" name=" Serial Port Mini-DIN Connector"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="f0e0ccd3-3e31-4b08-a756-bb5ec1acc4ed" name="SBC#1: Raspberry Pi 4 8GB / 64GB"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="df261461-2040-4a34-b7e7-10267f9b07ba" name="USB port"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="29dfde64-ac16-4e8e-8454-50c776f39b88" name="PP 3"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="e0639299-0c46-477d-a8b8-f631fdbfb4d1" name="PP 4"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="940e0d2b-6e1e-4504-8f71-1b8aa4b840e0" name="PP 5"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="12d140b8-6b22-4c41-b995-70f3c8d7ed99" name="Intel Realsense D435i"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="dcb07eff-1bad-40c4-b03c-4ead11fbf180" name="PP 1"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="9ff826f7-7f7a-4005-8486-2f344faa62a1" name="SMAKN DC-DC 12V to 7V5/6A 45W Converter"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="5a0537df-7fd0-43b1-b89a-6fed17316591" name="PP 1"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="3ca1b517-9dd6-49af-acf0-8af24b4c6a82" name="PP 2"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="28ef0ab8-377e-44b0-8272-19b239336fee" name="SBC#2: Raspberry Pi 4 8GB / 64GB"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="575124fe-f03c-461d-8c6e-e1f16e782ed6" name="PP 2"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="c956d216-be8e-4938-98a9-158f455d072c" name="PP 3"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="120340f0-f8c5-4fb3-a793-b69c150b27a4" name="PP 4"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="a040ff53-e280-4cee-8b23-7fb17607b982" name="PP 5"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="c0183afe-141e-4c63-9bc7-09e373f1096c" name="PP 6"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="32b150cf-bb04-4480-ae21-6e351e4c0e29" name="PP 7"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="ecee115f-88cd-490b-b5ba-d7e0fca0bcbd" name="Dual-band Wi-Fi Router GI Inet GL-AR750 (100mm X 68mm X 24mm, 86g)"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="dff6b43f-0b06-447d-a435-b600ddf78af8" name="PP 5"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="0dd92342-a164-42a3-8b92-36970149f2a7" name="PP 2"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="e3061fd8-b561-4e77-a8cc-ef2608d8ee7c" name="PP 3"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="fea0075e-3020-4654-be27-948e9f5edf7c" name="PP 4"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="02ea3b41-2fa4-4b5e-bb86-6bcdfbb0dddf" name="LY-KREE DC-DC 12V to 5V/15A 75W Converter"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="88392c53-81d8-4242-99ab-f24e1c3efd18" name="PP 5"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="2d2bbb10-7bda-4683-bf01-5e0b114c686c" name="PP 2"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="9b7013f1-61c6-4767-8a92-8ab5675e0b11" name="PP 3"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="4108881f-4890-48a8-bdc7-96ee5f24a13d" name="PP 2"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="06582a50-ce3a-48d8-b73e-956eaae504ce" name="PP 6"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="6287190f-e572-43a8-821b-8fc5ed1630e1" name="2DoF Pan Tilt Servo Kit"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="c938ba1b-998b-446f-a510-cbca7155a071" name="PP 1"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="134d0225-8a7c-42e6-b155-82be8307b1e8" name="PP 2"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="33fbcd83-5f16-4b42-96a1-99320c00aaef" name="Speakers" nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="ced47a89-2e65-45e6-9d4b-a1707eb4de42" name="PP 1"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="ab784c79-4745-4bef-a6e7-fd66c9fbef49" name="Omni Mic" nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="c6151c0c-66cf-421e-93de-fcb8b622d52d" name="PP 1"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="84af20f7-f915-4ab5-901b-c6c23c5c671b" name="Skyrich Lithium Battery Lix14 12V 12/14Ah"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="18f0a8d5-5cba-453d-9dae-8083c2c6fe9b" name="PP 1"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="de387191-c39a-41cf-8a69-5c6fbfc0ee8e" name="PP 2"/>
+            </ownedPhysicalComponents>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="52090268-c446-4dd9-8405-add7414a1c8d" name="Remote Artificial Brain"
+              nature="NODE">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cfc1eaae-4261-46aa-b0fe-0956394b2349"
+                name="High Performance Laptop" abstractType="#538a8cd7-24bc-4af1-9af7-243f8b594482">
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="d5ff8631-790f-4259-b67e-ea946aa0a4a6" deployedElement="#77784d7a-bf19-498c-ab7d-9cb160a052ca"
+                  location="#cfc1eaae-4261-46aa-b0fe-0956394b2349"/>
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="cc7369ba-d52e-4d99-8a8d-0c16ba1ff4d5" deployedElement="#810e4bd2-d077-46e3-ba0c-d92ad65bfdbe"
+                  location="#cfc1eaae-4261-46aa-b0fe-0956394b2349"/>
+            </ownedFeatures>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="538a8cd7-24bc-4af1-9af7-243f8b594482" name="High Performance Laptop"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="bc52e4df-157f-4b02-94b4-a0cdcc5b15a4" name="PP 1"/>
+            </ownedPhysicalComponents>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="ecb880f0-c24c-43bc-84b1-0cd6eaee3d85" name="2DoF Pan Tilt Driver Module"
+              nature="BEHAVIOR">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="f4d2a1b6-8958-4257-a818-7a29aee69a16" targetElement="#42857b29-3012-4a81-9191-3623441a804a"
+                sourceElement="#ecb880f0-c24c-43bc-84b1-0cd6eaee3d85"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="e79bc9a7-153a-4eed-8e14-3907031ea907" name="Audio Module" nature="BEHAVIOR">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="f07b4414-96b0-43f3-bb70-69b3fd3fa28b" targetElement="#61970196-5fa8-4648-baef-29250f66a99d"
+                sourceElement="#e79bc9a7-153a-4eed-8e14-3907031ea907"/>
+          </ownedPhysicalComponents>
+        </ownedPhysicalComponents>
+      </ownedPhysicalComponentPkg>
+      <ownedLogicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalArchitectureRealization"
+          id="c4769e0c-bac5-45ac-a434-cdd4de68bc51" targetElement="#611d8a15-5040-43b5-9622-59b62b57bcc9"
+          sourceElement="#3e90200b-89c5-42c7-85a9-30589301dee6"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.epbs:EPBSArchitecture"
+        id="52723233-b38f-41a0-b9cc-cc40b0624ab1" name="EPBS Architecture">
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="250d109b-d66f-4662-9dc2-29c4e12d0f8f" name="Capabilities"/>
+      <ownedConfigurationItemPkg xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItemPkg"
+          id="4c66fb34-dfd3-4017-bbff-d5ebd46895fa" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="9807f6d5-814c-4e30-b6f9-8079ee8d793b"
+            name="Autonomous Intelligent Agent" abstractType="#cfa21043-a382-4150-b70f-87c77709f653"/>
+        <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+            id="cfa21043-a382-4150-b70f-87c77709f653" name="Autonomous Intelligent Agent"
+            kind="SystemCI">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c043e4a5-6577-4461-8f1a-7b41087d941a"
+              name="Remote Artificial Brain" abstractType="#28c9a53b-b901-4217-917a-e4f855716263"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="89aadab1-2688-4364-b800-dac92d0baaf2"
+              name="Experimental Robotic Platform" abstractType="#8696d6a5-8977-4aaa-ac4a-48d6f420f9b6"/>
+          <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+              id="28c9a53b-b901-4217-917a-e4f855716263" name="Remote Artificial Brain"
+              kind="PrimeItemCI">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cf2448dc-b04a-4e85-beba-0982ff07e70d"
+                name="Software" abstractType="#9f630348-6265-42d0-9ac1-0a88fee1c55d"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="bf0f0f72-c8a0-41cf-b41a-0ca2547f9211"
+                name="Miscellaneous" abstractType="#a8192135-c4ee-4f31-98ad-5a1ca3594618"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="76f44a88-1912-477e-a1a2-4ae50c6a244e"
+                name="Equipment" abstractType="#09ac62d3-bf01-49ca-ac54-58a000a6a6ce"/>
+            <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                id="09ac62d3-bf01-49ca-ac54-58a000a6a6ce" name="Equipment" kind="PrimeItemCI">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="df89f391-ad2e-4f9c-9620-057777c91789"
+                  name="High Performance Laptop: Core i7 (or similar), GTX 1050 (or superior), 16GB RAM, 256GB SSD"
+                  abstractType="#0d5bd0cf-196e-42ec-93d8-790ffc52c38a"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="0d5bd0cf-196e-42ec-93d8-790ffc52c38a" name="High Performance Laptop: Core i7 (or similar), GTX 1050 (or superior), 16GB RAM, 256GB SSD"
+                  kind="COTSCI">
+                <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                    id="f1bb53c6-31af-4829-b798-6645a81b30fb" targetElement="#538a8cd7-24bc-4af1-9af7-243f8b594482"
+                    sourceElement="#0d5bd0cf-196e-42ec-93d8-790ffc52c38a"/>
+              </ownedConfigurationItems>
+            </ownedConfigurationItems>
+            <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                id="9f630348-6265-42d0-9ac1-0a88fee1c55d" name="Software" kind="PrimeItemCI">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="503237d6-9c60-4e3d-856a-86b8169b9690"
+                  name="IARA/Carmen Modules Software" abstractType="#cbfce406-04ae-4fdd-9a34-fe5c34f88a3a"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7e33e98d-d3ad-4ad1-b51c-7b05c9966e40"
+                  name="Autonomous Computational Intelligence Software" abstractType="#29402517-479d-40cb-aee3-23d0d020f6d5"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="29402517-479d-40cb-aee3-23d0d020f6d5" name="Autonomous Computational Intelligence Software"
+                  kind="CSCI">
+                <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                    id="d52e4e27-2575-4f92-b23d-e5c1e917d917" targetElement="#1b555e37-42fb-4776-bfa4-e4f146d61136"
+                    sourceElement="#29402517-479d-40cb-aee3-23d0d020f6d5"/>
+              </ownedConfigurationItems>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="cbfce406-04ae-4fdd-9a34-fe5c34f88a3a" name="IARA/Carmen Modules Software"
+                  kind="CSCI">
+                <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                    id="c0c1f11d-acf5-47da-8a5c-716eb27e7d68" targetElement="#84713c9f-5fd1-4075-bff1-9c4446112fb3"
+                    sourceElement="#cbfce406-04ae-4fdd-9a34-fe5c34f88a3a"/>
+              </ownedConfigurationItems>
+            </ownedConfigurationItems>
+            <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                id="a8192135-c4ee-4f31-98ad-5a1ca3594618" name="Miscellaneous" kind="PrimeItemCI"/>
+            <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                id="ad334bb5-8a4f-44f8-a13b-47bfd61f1b6d" targetElement="#52090268-c446-4dd9-8405-add7414a1c8d"
+                sourceElement="#28c9a53b-b901-4217-917a-e4f855716263"/>
+          </ownedConfigurationItems>
+          <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+              id="8696d6a5-8977-4aaa-ac4a-48d6f420f9b6" name="Experimental Robotic Platform"
+              kind="PrimeItemCI">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b5a5c3ed-9ffc-4319-a39f-b21340e4ef46"
+                name="Equipment" abstractType="#2f0736f4-2a29-43f4-a509-54d32a0e42e0"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="acd9b5c7-72e2-4e63-a0da-8b4dacf3f552"
+                name="Miscellaneous" abstractType="#dfc20465-ca8b-49b6-a0ae-19e731dbb475"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d9ad0662-2fe6-4459-9b5a-e99982bd80da"
+                name="Software" abstractType="#11f5f5fc-2f9d-4510-91f9-d04f8b29a736"/>
+            <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                id="dfc20465-ca8b-49b6-a0ae-19e731dbb475" name="Miscellaneous" kind="PrimeItemCI">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="6775589d-7682-4de5-83a6-51badbce0f98"
+                  name="Speakers" abstractType="#153c80a5-6052-47b5-bd87-04f4f6260deb"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e78658e0-3f44-4c57-a3e5-4385d0bfba73"
+                  name="Omnidirectional Mic" abstractType="#5de89bb8-3232-46af-8e8c-3636b19cc7aa"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e389bcb7-306a-4e84-91aa-031d208b2091"
+                  name="Skyrich Lithium Battery Lix14 12V 12/14Ah" abstractType="#a99a31eb-b266-4ff4-afab-603173e3a046"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="162e1faf-b505-405f-8ed1-fe73905e1dfb"
+                  name="2DoF Pan Tilt Servo Kit" abstractType="#03d3dff0-4804-4518-9677-094505bf822c"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4ea7ed8a-edd2-448b-a1d6-eff214f3ac71"
+                  name="LY-KREE DC-DC 12V to 5V/15A 75W Converter" abstractType="#dd7cbef0-2f3d-4d58-8dbd-2f980c7b31f0"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="01d9c420-4dbe-4faf-b8f5-201174ebb6b8"
+                  name="SMAKN DC-DC 12V to 7V5/6A 45W Converter" abstractType="#60272700-7470-486a-a004-b04b25035d87"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="153c80a5-6052-47b5-bd87-04f4f6260deb" name="Speakers" kind="HWCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="5de89bb8-3232-46af-8e8c-3636b19cc7aa" name="Omnidirectional Mic"
+                  kind="HWCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="a99a31eb-b266-4ff4-afab-603173e3a046" name="Skyrich Lithium Battery Lix14 12V 12/14Ah"
+                  kind="COTSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="03d3dff0-4804-4518-9677-094505bf822c" name="2DoF Pan Tilt Servo Kit"
+                  kind="HWCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="dd7cbef0-2f3d-4d58-8dbd-2f980c7b31f0" name="LY-KREE DC-DC 12V to 5V/15A 75W Converter"
+                  kind="HWCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="60272700-7470-486a-a004-b04b25035d87" name="SMAKN DC-DC 12V to 7V5/6A 45W Converter"
+                  kind="HWCI"/>
+            </ownedConfigurationItems>
+            <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                id="11f5f5fc-2f9d-4510-91f9-d04f8b29a736" name="Software" kind="PrimeItemCI">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="43164978-f47f-43a9-a946-f522764a1340"
+                  name="Audio Module" abstractType="#7d0ca402-4160-4089-9e63-885feb8ba20a"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9408005f-0938-4d8b-a964-cd2163896d33"
+                  name="2DoF Pan Tilt Driver Module" abstractType="#73632135-97c6-48d5-b9c3-624f2a6fb794"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="efa97f67-1827-4743-b6f2-fa0aaf257a95"
+                  name="Intel Realsense Driver Module" abstractType="#f3f6125f-37ef-4d8e-b2ff-8bd7685fa2f4"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3304e7bc-75bc-4d73-a214-a0e220f51a67"
+                  name="Robotic Arm Driver Module" abstractType="#e4239c63-d461-4ad4-8aaa-3679f8d55619"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3225a973-6409-45a7-bb0b-32e8c06b5220"
+                  name="iRobot Creator 2 Driver Module" abstractType="#15cc4267-76e8-4135-b0d9-df775573e980"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="7d0ca402-4160-4089-9e63-885feb8ba20a" name="Audio Module" kind="CSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="73632135-97c6-48d5-b9c3-624f2a6fb794" name="2DoF Pan Tilt Driver Module"
+                  kind="CSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="15cc4267-76e8-4135-b0d9-df775573e980" name="iRobot Creator 2 Driver Module"
+                  kind="CSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="e4239c63-d461-4ad4-8aaa-3679f8d55619" name="Robotic Arm Driver Module"
+                  kind="CSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="f3f6125f-37ef-4d8e-b2ff-8bd7685fa2f4" name="Intel Realsense Driver Module"
+                  kind="CSCI"/>
+            </ownedConfigurationItems>
+            <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                id="2f0736f4-2a29-43f4-a509-54d32a0e42e0" name="Equipment" kind="PrimeItemCI">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="65750053-f46b-448f-829c-03e255774a24"
+                  name="Single Board Computer: Raspberry Pi 4 8GB / 64GB" abstractType="#832a992f-dcb0-46f7-aa61-519b3541114d"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="742f4e1d-fe23-4c40-b47a-9958885d8e03"
+                  name="xArm 1S Robotic Arm" abstractType="#a14dfcc8-57e6-4539-9706-02b75cda3cb1"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="309691df-6bb2-41db-8f0a-1fa3201c9fc5"
+                  name="iRobot Creator 2" abstractType="#81de71af-845a-41c5-8838-8d486de638d8"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f8e729d6-fa2b-4829-a007-ae8a8067236b"
+                  name="Intel Realsense D435i" abstractType="#bd008c58-f3e4-4679-94b4-135cc3b5ca61"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="95d0c855-9259-4b0c-8db4-f02d24770a74"
+                  name="Dual-band Wi-Fi Router GI Inet GL-AR750" abstractType="#741fd874-1a28-4f31-8e57-42ae917aef50"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="832a992f-dcb0-46f7-aa61-519b3541114d" name="Single Board Computer: Raspberry Pi 4 8GB / 64GB"
+                  kind="COTSCI">
+                <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+                    id="5c2db12f-2193-47bf-b6e2-f3a139719e91" name="2x" constrainedElements="#832a992f-dcb0-46f7-aa61-519b3541114d">
+                  <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                      id="6daba289-4ae7-49d7-b1ca-d3edb5cdfef8">
+                    <bodies></bodies>
+                    <languages>capella:linkedText</languages>
+                  </ownedSpecification>
+                </ownedConstraints>
+              </ownedConfigurationItems>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="a14dfcc8-57e6-4539-9706-02b75cda3cb1" name="xArm 1S Robotic Arm"
+                  kind="COTSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="81de71af-845a-41c5-8838-8d486de638d8" name="iRobot Creator 2"
+                  kind="HWCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="bd008c58-f3e4-4679-94b4-135cc3b5ca61" name="Intel Realsense D435i"
+                  kind="COTSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="741fd874-1a28-4f31-8e57-42ae917aef50" name="Dual-band Wi-Fi Router GI Inet GL-AR750"
+                  kind="COTSCI"/>
+            </ownedConfigurationItems>
+            <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                id="d65f400f-3740-47a5-9b77-54ae246bf191" targetElement="#806fdd15-47d5-4e39-a611-35b02a426f42"
+                sourceElement="#8696d6a5-8977-4aaa-ac4a-48d6f420f9b6"/>
+          </ownedConfigurationItems>
+          <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+              id="21a42d54-4180-4b4a-9a14-db97613d1dc4" targetElement="#7ae5aed6-cc7e-41ff-bfd9-81f54c481ed6"
+              sourceElement="#cfa21043-a382-4150-b70f-87c77709f653"/>
+        </ownedConfigurationItems>
+      </ownedConfigurationItemPkg>
+      <ownedPhysicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArchitectureRealization"
+          id="d5302396-750a-40fa-bf41-c6912bf37b6c" targetElement="#3e90200b-89c5-42c7-85a9-30589301dee6"
+          sourceElement="#52723233-b38f-41a0-b9cc-cc40b0624ab1"/>
+    </ownedArchitectures>
+  </ownedModelRoots>
+</org.polarsys.capella.core.data.capellamodeller:Project>
