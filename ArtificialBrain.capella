@@ -348,6 +348,8 @@
               id="42857b29-3012-4a81-9191-3623441a804a" name="2DoF Pan Tilt Driver Functions"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
               id="61970196-5fa8-4648-baef-29250f66a99d" name="Audio Module Functions"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+              id="2e37a035-6abf-4179-9370-e6b328f1a714" name="Ackerman Platform Driver Functions"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="630ecc5b-ce62-4885-9b7c-4e802bcc611c" targetElement="#33851175-f0bb-4c42-8828-6e5cb300d414"
               sourceElement="#242c53a4-1bfe-4c16-b01e-c4adf5c8ef5d"/>
@@ -365,6 +367,22 @@
             id="6e631abb-4915-4d48-9534-266d66c15372" name="">
           <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
               id="efb1dca6-3679-4ecf-bfd6-1a7a058d7300">
+            <bodies></bodies>
+            <languages>capella:linkedText</languages>
+          </ownedSpecification>
+        </ownedConstraints>
+        <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+            id="a5feb7a3-0f89-4023-8215-157c497faca9" name="">
+          <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+              id="70c29ebb-f86d-477e-a4e6-6a06f9c741d5">
+            <bodies></bodies>
+            <languages>capella:linkedText</languages>
+          </ownedSpecification>
+        </ownedConstraints>
+        <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+            id="aef02c6f-9cc1-481e-92b4-92a1f25afdf2" name="">
+          <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+              id="3dea6d64-b0f6-4a84-a314-92a81d5c087e">
             <bodies></bodies>
             <languages>capella:linkedText</languages>
           </ownedSpecification>
@@ -392,6 +410,8 @@
               name="2DoF Pan Tilt Driver Module" abstractType="#ecb880f0-c24c-43bc-84b1-0cd6eaee3d85"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="81f76441-6a68-40fe-a181-ac1db01306ed"
               name="Audio Module" abstractType="#e79bc9a7-153a-4eed-8e14-3907031ea907"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="60e6df34-2c59-48c4-a5e3-a954e2c897a7"
+              name="Ackerman Platform Driver Module" abstractType="#d8f8d68d-c299-47ab-8d3f-f35640a4cbc2"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="9989028e-7cb6-4a82-aaf2-f9e3e51d4158" targetElement="#8fbc07b2-2e3b-4bb8-a6ae-edf33c26b78a"
               sourceElement="#7ae5aed6-cc7e-41ff-bfd9-81f54c481ed6"/>
@@ -478,6 +498,9 @@
               <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
                   id="db0cb6f3-64e2-4529-bc64-101daa61bcc2" deployedElement="#b43bbee2-3a40-4ac5-8463-a19da78077b7"
                   location="#4d6b141c-7572-49f7-9970-cd90442ea351"/>
+              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                  id="7e694db5-c44b-4525-ae92-6e36676f2f53" deployedElement="#60e6df34-2c59-48c4-a5e3-a954e2c897a7"
+                  location="#4d6b141c-7572-49f7-9970-cd90442ea351"/>
             </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e0080648-7c86-45fc-a44d-92d40d52a597"
                 name="Intel Realsense D435i" abstractType="#12d140b8-6b22-4c41-b995-70f3c8d7ed99"/>
@@ -508,6 +531,12 @@
                 name="Omni Mic" abstractType="#ab784c79-4745-4bef-a6e7-fd66c9fbef49"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1168d1f8-9b1d-4027-bf50-c950714156af"
                 name="Skyrich Lithium Battery Lix14 12V 12/14Ah" abstractType="#84af20f7-f915-4ab5-901b-c6c23c5c671b"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="b3a7df5c-6ed8-4680-a4d0-780cb83a9470"
+                name="Ackerman Platform" abstractType="#51a6a0a9-87d1-4be4-b127-5a9ddf06abc7"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4578a91e-1b14-45a2-bb36-8db2b4338678"
+                name="PincherX 100 Robotic Arm" abstractType="#af2922eb-bce7-4831-b4d6-39521c515700"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="80256d10-fd58-49eb-a977-335aec2bac24"
+                name="Cllena DC 8V-40V to 12V/10A 120W Regulator" abstractType="#b30e9f09-999f-4668-827d-5c86721e0eb1"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                 id="c9bb472d-f8b1-4709-80bf-6ba92dbb1747" name="Serial cable with USB adapter"
                 linkEnds="#df261461-2040-4a34-b7e7-10267f9b07ba #ef548b5d-2c7a-4ff8-8c4f-4535d5295761"/>
@@ -545,6 +574,15 @@
                 id="18212d83-416b-4e61-8e2e-513647227270" name="12V/4A ~45W" linkEnds="#18f0a8d5-5cba-453d-9dae-8083c2c6fe9b #3ca1b517-9dd6-49af-acf0-8af24b4c6a82"/>
             <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
                 id="4a339902-6b28-4d0f-921c-96e048d40d12" name="12V/6A ~ 75W" linkEnds="#de387191-c39a-41cf-8a69-5c6fbfc0ee8e #06582a50-ce3a-48d8-b73e-956eaae504ce"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="c2162729-0999-4728-90db-dded11ac11e4" name="USB / USB-B Cable"
+                linkEnds="#e82a96cc-e462-4b41-9e6a-292df02dae14 #0c8a0845-a90e-4e8f-b67b-c80a86356dbe"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="0ab45f5d-be0d-4e76-8348-a6c0e02235c1" name="USB Cable" linkEnds="#a596c3d4-6a03-40d7-9fe0-815afd168543 #53f6a47d-c98e-49da-94ae-735e766f9e9b"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="ed147d6f-e6e9-45eb-99da-ba79c834298e" name="12V/2A ~24W" linkEnds="#489e97f6-3c05-4cfe-bfbd-76a053b747c6 #73ebbdb8-d382-4928-87ec-ba78a05d8a05"/>
+            <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+                id="2b1003ea-e126-48ae-a9fb-014db5e73395" name="12V/2A" linkEnds="#af4cc584-5c5a-4841-92bf-56e3952a26e5 #d998553e-a43f-4e03-8ddc-9c9ed6062956"/>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="6a210268-df29-44af-9d17-6dd5e84caa37" name="xArm 1S Robotic Arm "
                 nature="NODE">
@@ -570,6 +608,10 @@
                   id="e0639299-0c46-477d-a8b8-f631fdbfb4d1" name="PP 4"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                   id="940e0d2b-6e1e-4504-8f71-1b8aa4b840e0" name="PP 5"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="e82a96cc-e462-4b41-9e6a-292df02dae14" name="PP 6"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="a596c3d4-6a03-40d7-9fe0-815afd168543" name="PP 7"/>
             </ownedPhysicalComponents>
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="12d140b8-6b22-4c41-b995-70f3c8d7ed99" name="Intel Realsense D435i"
@@ -652,6 +694,30 @@
                   id="18f0a8d5-5cba-453d-9dae-8083c2c6fe9b" name="PP 1"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                   id="de387191-c39a-41cf-8a69-5c6fbfc0ee8e" name="PP 2"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="489e97f6-3c05-4cfe-bfbd-76a053b747c6" name="PP 3"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="51a6a0a9-87d1-4be4-b127-5a9ddf06abc7" name="Ackerman Platform"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="53f6a47d-c98e-49da-94ae-735e766f9e9b" name="PP 1"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="af2922eb-bce7-4831-b4d6-39521c515700" name="PincherX 100 Robotic Arm"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="0c8a0845-a90e-4e8f-b67b-c80a86356dbe" name="PP 1"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="af4cc584-5c5a-4841-92bf-56e3952a26e5" name="PP 2"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="b30e9f09-999f-4668-827d-5c86721e0eb1" name="Cllena DC 8V-40V to 12V/10A 120W Regulator"
+                nature="NODE">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="73ebbdb8-d382-4928-87ec-ba78a05d8a05" name="PP 1"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+                  id="d998553e-a43f-4e03-8ddc-9c9ed6062956" name="PP 2"/>
             </ownedPhysicalComponents>
           </ownedPhysicalComponents>
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
@@ -685,6 +751,13 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="f07b4414-96b0-43f3-bb70-69b3fd3fa28b" targetElement="#61970196-5fa8-4648-baef-29250f66a99d"
                 sourceElement="#e79bc9a7-153a-4eed-8e14-3907031ea907"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="d8f8d68d-c299-47ab-8d3f-f35640a4cbc2" name="Ackerman Platform Driver Module"
+              nature="BEHAVIOR">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="75e540ea-295f-47c6-aa9f-b17200fef889" targetElement="#2e37a035-6abf-4179-9370-e6b328f1a714"
+                sourceElement="#d8f8d68d-c299-47ab-8d3f-f35640a4cbc2"/>
           </ownedPhysicalComponents>
         </ownedPhysicalComponents>
       </ownedPhysicalComponentPkg>
