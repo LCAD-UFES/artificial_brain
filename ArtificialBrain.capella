@@ -852,6 +852,8 @@
                   name="LY-KREE DC-DC 12V to 5V/15A 75W Converter" abstractType="#dd7cbef0-2f3d-4d58-8dbd-2f980c7b31f0"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="01d9c420-4dbe-4faf-b8f5-201174ebb6b8"
                   name="SMAKN DC-DC 12V to 7V5/6A 45W Converter" abstractType="#60272700-7470-486a-a004-b04b25035d87"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c2feed3d-1306-4458-b176-4f94598d2665"
+                  name="Cllena DC 8V-40V to 12V/10A 120W Regulator" abstractType="#a603a7c0-bbd8-44b1-9070-8b56627c909e"/>
               <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
                   id="153c80a5-6052-47b5-bd87-04f4f6260deb" name="Speakers" kind="HWCI"/>
               <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
@@ -869,6 +871,13 @@
               <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
                   id="60272700-7470-486a-a004-b04b25035d87" name="SMAKN DC-DC 12V to 7V5/6A 45W Converter"
                   kind="HWCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="a603a7c0-bbd8-44b1-9070-8b56627c909e" name="Cllena DC 8V-40V to 12V/10A 120W Regulator"
+                  kind="HWCI">
+                <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                    id="61429d75-d338-463f-b36f-6d05f2eb154c" targetElement="#b30e9f09-999f-4668-827d-5c86721e0eb1"
+                    sourceElement="#a603a7c0-bbd8-44b1-9070-8b56627c909e"/>
+              </ownedConfigurationItems>
             </ownedConfigurationItems>
             <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
                 id="11f5f5fc-2f9d-4510-91f9-d04f8b29a736" name="Software" kind="PrimeItemCI">
@@ -882,6 +891,8 @@
                   name="Robotic Arm Driver Module" abstractType="#e4239c63-d461-4ad4-8aaa-3679f8d55619"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3225a973-6409-45a7-bb0b-32e8c06b5220"
                   name="iRobot Creator 2 Driver Module" abstractType="#15cc4267-76e8-4135-b0d9-df775573e980"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="db3025ed-2233-45ac-8672-f8b844ce3178"
+                  name="Ackerman Platform Driver Module" abstractType="#4fb6b1fe-ede0-449c-a27a-dc1518ceaef1"/>
               <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
                   id="7d0ca402-4160-4089-9e63-885feb8ba20a" name="Audio Module" kind="CSCI"/>
               <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
@@ -896,6 +907,13 @@
               <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
                   id="f3f6125f-37ef-4d8e-b2ff-8bd7685fa2f4" name="Intel Realsense Driver Module"
                   kind="CSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="4fb6b1fe-ede0-449c-a27a-dc1518ceaef1" name="Ackerman Platform Driver Module"
+                  kind="CSCI">
+                <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                    id="2fdf4c6d-4179-4095-bd4c-ed26ae92334b" targetElement="#d8f8d68d-c299-47ab-8d3f-f35640a4cbc2"
+                    sourceElement="#4fb6b1fe-ede0-449c-a27a-dc1518ceaef1"/>
+              </ownedConfigurationItems>
             </ownedConfigurationItems>
             <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
                 id="2f0736f4-2a29-43f4-a509-54d32a0e42e0" name="Equipment" kind="PrimeItemCI">
@@ -909,6 +927,10 @@
                   name="Intel Realsense D435i" abstractType="#bd008c58-f3e4-4679-94b4-135cc3b5ca61"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="95d0c855-9259-4b0c-8db4-f02d24770a74"
                   name="Dual-band Wi-Fi Router GI Inet GL-AR750" abstractType="#741fd874-1a28-4f31-8e57-42ae917aef50"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="956feb9a-a2db-4c24-8675-95b2cb829b3c"
+                  name="PincherX 100 Robotic Arm" abstractType="#e05f050c-ad23-4f7b-a075-45abf2ce053c"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e3e07a07-7bf6-4744-b7d8-36419f5c5c00"
+                  name="Ackerman Platform" abstractType="#211dd233-e327-4e52-bb13-e7200d2458ca"/>
               <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
                   id="832a992f-dcb0-46f7-aa61-519b3541114d" name="Single Board Computer: Raspberry Pi 4 8GB / 64GB"
                   kind="COTSCI">
@@ -933,6 +955,20 @@
               <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
                   id="741fd874-1a28-4f31-8e57-42ae917aef50" name="Dual-band Wi-Fi Router GI Inet GL-AR750"
                   kind="COTSCI"/>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="e05f050c-ad23-4f7b-a075-45abf2ce053c" name="PincherX 100 Robotic Arm"
+                  kind="COTSCI">
+                <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                    id="f96a8e13-0955-42f5-8ca9-763411ff52ae" targetElement="#6a210268-df29-44af-9d17-6dd5e84caa37"
+                    sourceElement="#e05f050c-ad23-4f7b-a075-45abf2ce053c"/>
+              </ownedConfigurationItems>
+              <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+                  id="211dd233-e327-4e52-bb13-e7200d2458ca" name="Ackerman Platform"
+                  kind="COTSCI">
+                <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+                    id="2c817e53-fa19-4235-a241-b272815cb60f" targetElement="#51a6a0a9-87d1-4be4-b127-5a9ddf06abc7"
+                    sourceElement="#211dd233-e327-4e52-bb13-e7200d2458ca"/>
+              </ownedConfigurationItems>
             </ownedConfigurationItems>
             <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
                 id="d65f400f-3740-47a5-9b77-54ae246bf191" targetElement="#806fdd15-47d5-4e39-a611-35b02a426f42"
