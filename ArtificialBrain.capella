@@ -237,7 +237,7 @@
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="ed705a79-c201-4794-b5d1-723f62cfd961" name="Semi-Autonomous Experimental Robotic Platform (Artificial Body)">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="70518566-2d6b-41ad-a8d8-27dbcd48f3a5"
-                name="Sensors (e.g. wheel odometers, joint stereo camera system, microphones)"
+                name="Sensors (e.g. wheel odometers, joint stereo camera system, mics)"
                 abstractType="#728d6cdf-21c6-4503-b9a8-32d111e204a0"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2defaa9e-8807-42c1-8f9a-21fb53ca40e8"
                 name="Actuators (e.g. wheel motors, robot arm servos, speakers) "
@@ -246,7 +246,7 @@
                 name="IARA (e.g. navigation, control &amp; path planning modules)"
                 abstractType="#ecabab08-2226-4074-8966-deee692dde8b"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="728d6cdf-21c6-4503-b9a8-32d111e204a0" name="Sensors (e.g. wheel odometers, joint stereo camera system, microphones)"/>
+                id="728d6cdf-21c6-4503-b9a8-32d111e204a0" name="Sensors (e.g. wheel odometers, joint stereo camera system, mics)"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="0e475308-385b-4bf0-ab66-ba9a5289cf71" name="Actuators (e.g. wheel motors, robot arm servos, speakers) "/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
