@@ -1,15 +1,29 @@
 # Artificial brain
-This repository describes the architecture of an experimental robotic platform.
+This repository describes the architecture of an autonomous intelligent agent. The architecure was designed using the [Eclipse Capella](https://www.eclipse.org/capella/) tool (version 5.2.0) following the [Arcadia](https://www.eclipse.org/capella/arcadia.html) systems engineering methodology.
 
 ## Goal
-Create an experimental environment to develop an artificial brain which is ablewith basic human-machine interactions.
+Design an experimental setup to develop and evaluate basic capabilities of an Autonomous Computational Intelligence through interactions with a human interlocutor and an unstructured indoor environment.
 
 ## High-level requirements
+In this section, we list some high-level requirements describing mainly the interactions between an human user / operator with the system, i.e. the Autonomous Intelligent Agent:
+1. The system shall be able receive high-level voice commands from a human user / operator;
+2. The system shall provide voice feedback to the human user / operator;
+3. The system shall learn scripts describing how to perform simple tasks in the unstructure indoor environment, e.g. go get an object at a given room;
+4. The system shall recall the appropriate scripts upon high-level human voice commands;
+5. The system shall execute scripts to perform learned tasks in the unstructure indoor environment;
+6. ...
 
+## Logical architecture
+As depicted in the figure below, the Autonomous Intelliget Agent includes both an Autonomous Computational Intelligence and a Semi-Autonomous Experimental Robotic Platform. The Autonomous Computational Intelligence corresponds to an Artificial Brain in which the high-level voice commands are recognized, translated into scripts and them prepared for execution using the feedback from the unstructure indoor environment. On the other hand, the Semi-Autonomous Experimental Robotic Platoform corresponds to an Artificial Body by which the Artificial Brain executes its tasks and collect feedback from the unstructure indoor environment.
+
+![Logical Architecture](https://github.com/LCAD-UFES/artificial_brain/blob/main/docs/%5BLCBD%5D%20Structure.png)
+
+## Low-level requirements
+This section describes the low-level requirements for the physical architecture:
+1. The indoor robotic platform shall be remotely controlled by the artificial brain via a high-speed Wi-Fi link;
+2. ...
 
 ## Physical architecture
-The physical architecure was designed using the [Eclipse Capella](https://www.eclipse.org/capella/) tool (version 5.2.0) following the [Arcadia](https://www.eclipse.org/capella/arcadia.html) systems engineering methodology.
-
 Figure below illustrates the main components of the physical architecture highlighting both the allocation of physical functions (green boxes) into software components (blue boxes) and the allocation of software components (blue boxes) into hardware components (yellow boxes). The architecture also indicates the main physical interfaces between the hardware components.
 ![Physical Architecture](https://github.com/LCAD-UFES/artificial_brain/blob/main/docs/%5BPAB%5D%20Physical%20Architecture%202.png)
 
