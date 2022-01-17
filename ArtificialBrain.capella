@@ -222,6 +222,8 @@
             name="Autonomous Intelligent Agent" abstractType="#8fbc07b2-2e3b-4bb8-a6ae-edf33c26b78a"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="ed178bf4-af98-4ddd-8e3d-3b953d5ea28e"
             name="Human Interlocutor" abstractType="#b471e0cf-89bf-4232-89ec-e5e0bfa4e5cb"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="fdb126e3-6a3d-4b7e-ac2d-8b7f9b8ed481"
+            name="Unstructured Indoor Environment" abstractType="#e4848487-803e-4da5-919b-a5b2f29ef4d2"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="8fbc07b2-2e3b-4bb8-a6ae-edf33c26b78a" name="Autonomous Intelligent Agent">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a3e169af-2932-4d21-af05-2fa90cb7c639"
@@ -256,6 +258,9 @@
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="b471e0cf-89bf-4232-89ec-e5e0bfa4e5cb" name="Human Interlocutor" actor="true"
             human="true"/>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="e4848487-803e-4da5-919b-a5b2f29ef4d2" name="Unstructured Indoor Environment"
+            actor="true"/>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
           id="67df00a8-1f13-4c41-982b-b7aeaf1f7d73" targetElement="#5452cf56-1b6c-4c0d-a2d8-8607d4ca1004"
