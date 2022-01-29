@@ -12,7 +12,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Component%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg" href="ArtificialBrain.capella#d48133c4-363d-460b-ab9e-42c003c14bd0"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_2uQCsbsXEeujFq5nYrBoNQ" name="[PAB] Physical Architecture 1" repPath="#_2uLxQLsXEeujFq5nYrBoNQ" changeId="43de5ea1-3aff-49fc-a397-72dc9d2abddc">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_2uQCsbsXEeujFq5nYrBoNQ" name="[PAB] Physical Architecture 1" repPath="#_2uLxQLsXEeujFq5nYrBoNQ" changeId="537f3629-3c93-45da-99ae-6f16dbd92178">
         <eAnnotations xmi:type="description:DAnnotation" uid="_2uTtELsXEeujFq5nYrBoNQ" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2uUUILsXEeujFq5nYrBoNQ" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2uUUIbsXEeujFq5nYrBoNQ" key="hide.computed.physical.links.filter" value="true"/>
@@ -24,7 +24,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Function%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.pa:PhysicalFunction" href="ArtificialBrain.capella#242c53a4-1bfe-4c16-b01e-c4adf5c8ef5d"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_SgYooHVvEey_ntHw87pI9A" name="[PAB] Physical Architecture 2" repPath="#_SgSiAHVvEey_ntHw87pI9A" changeId="bf37f443-83d1-4912-a672-99cb81f10c7f">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_SgYooHVvEey_ntHw87pI9A" name="[PAB] Physical Architecture 2" repPath="#_SgSiAHVvEey_ntHw87pI9A" changeId="6c71d62e-fa52-4b6d-80e8-a24712442b5e">
         <eAnnotations xmi:type="description:DAnnotation" uid="_SgR68HVvEey_ntHw87pI9A" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SgeIMHVvEey_ntHw87pI9A" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SgeIMXVvEey_ntHw87pI9A" key="hide.computed.physical.links.filter" value="true"/>
@@ -2826,20 +2826,6 @@
           </centerLabelStyleDescription>
           <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_ahqKs3VfEeyZY6sLG0zUPg" showIcon="false" labelExpression="aql:self.getOverlappedPhysicalPathsLabel(view, diagram)">
             <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-          </endLabelStyleDescription>
-          <centeredSourceMappings xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']/@borderedNodeMappings[name='PAB_Port']"/>
-          <centeredTargetMappings xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']/@borderedNodeMappings[name='PAB_Port']"/>
-        </computedStyleDescriptions>
-        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_x3oFQHcEEeyQqZQ7UD9i9g" targetArrow="NoDecoration">
-          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
-          <beginLabelStyleDescription xmi:type="style:BeginLabelStyleDescription" xmi:id="_x3oFQXcEEeyQqZQ7UD9i9g" labelExpression="aql:self.getOverlappedPhysicalPathsLabel(view, diagram)">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          </beginLabelStyleDescription>
-          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_x3oFQncEEeyQqZQ7UD9i9g" labelExpression="aql:self.getPhysicalLinkCenterLabel(diagram)">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
-          </centerLabelStyleDescription>
-          <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_x3oFQ3cEEeyQqZQ7UD9i9g" labelExpression="aql:self.getOverlappedPhysicalPathsLabel(view, diagram)">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </endLabelStyleDescription>
           <centeredSourceMappings xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']/@borderedNodeMappings[name='PAB_Port']"/>
           <centeredTargetMappings xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']/@borderedNodeMappings[name='PAB_Port']"/>
@@ -8138,20 +8124,6 @@
           </centerLabelStyleDescription>
           <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_SgafDXVvEey_ntHw87pI9A" showIcon="false" labelExpression="aql:self.getOverlappedPhysicalPathsLabel(view, diagram)">
             <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
-          </endLabelStyleDescription>
-          <centeredSourceMappings xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']/@borderedNodeMappings[name='PAB_Port']"/>
-          <centeredTargetMappings xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']/@borderedNodeMappings[name='PAB_Port']"/>
-        </computedStyleDescriptions>
-        <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_-0pn0HdxEeynf6t67NmggQ" targetArrow="NoDecoration">
-          <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
-          <beginLabelStyleDescription xmi:type="style:BeginLabelStyleDescription" xmi:id="_-0pn0XdxEeynf6t67NmggQ" labelExpression="aql:self.getOverlappedPhysicalPathsLabel(view, diagram)">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-          </beginLabelStyleDescription>
-          <centerLabelStyleDescription xmi:type="style:CenterLabelStyleDescription" xmi:id="_-0pn0ndxEeynf6t67NmggQ" labelExpression="aql:self.getPhysicalLinkCenterLabel(diagram)">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
-          </centerLabelStyleDescription>
-          <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_-0pn03dxEeynf6t67NmggQ" labelExpression="aql:self.getOverlappedPhysicalPathsLabel(view, diagram)">
-            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </endLabelStyleDescription>
           <centeredSourceMappings xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']/@borderedNodeMappings[name='PAB_Port']"/>
           <centeredTargetMappings xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']/@borderedNodeMappings[name='PAB_Port']"/>
